@@ -8,3 +8,5 @@ setInterval(()=>{
   opacity += increasing ? 0.01 : -0.01;
   welcome.style.opacity = opacity;
 }, 30);
+
+console.log("SBFC Organization Website Loaded Successfully");
