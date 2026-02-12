@@ -1,0 +1,114 @@
+/* ===== Global Style ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    color:#fff;
+}
+
+/* ===== Header ===== */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#0f172a;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.page-name{
+    font-size:16px;
+}
+
+/* ===== Animated Welcome Text ===== */
+.welcome-text{
+    font-size:18px;
+    font-weight:bold;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from {opacity:0.5;}
+    to {opacity:1;}
+}
+
+/* ===== Navbar ===== */
+nav{
+    background:#1e293b;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    padding:12px 40px;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* ===== Banner ===== */
+.banner{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(45deg,#0f2027,#203a43,#2c5364);
+}
+
+.banner h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:18px;
+}
+
+/* ===== Grid Section ===== */
+.grid-section{
+    padding:50px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.grid-item img{
+    width:100%;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.grid-item img:hover{
+    transform:scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0f172a;
+}
+
+footer .social{
+    margin-bottom:10px;
+}
+
+f
