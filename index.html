@@ -1,96 +1,56 @@
-<header class="main-header">
-  <div class="container">
-    <div class="logo"><span>SBFC</span> Organization</div>
-    <nav class="nav-menu">
-      <a href="index.html">Home</a>
-      <a href="mission.html">Mission</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="notice.html">Notice</a>
-      <a href="donate.html">Donate</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="hero-content">
-    <h1>Building a Better Future Together</h1>
-    <p>Empowering communities through education, support, and unity.</p>
-    <a href="about.html" class="hero-btn">Learn More</a>
-  </div>
-</section>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SBFC Organization - Home</title>
+<title>SBFC Organization</title>
 <link rel="stylesheet" href="css/style.css">
-<script defer src="js/script.js"></script>
 </head>
-<body class="home">
-<header>
-<div class="logo">SBFC</div>
-<div class="welcome-text">Welcome to SBFC Organization</div>
-<div class="page-name">🏠 Home</div>
-</header>
-<nav>
-<ul>
-<li><a href="index.html">🏠 Home</a></li>
-<li><a href="mission.html">🎯 Mission</a></li>
-<li><a href="gallery.html">📸 Gallery</a></li>
-<li><a href="notice.html">📢 Notice</a></li>
-<li><a href="donate.html">🤝 Donate</a></li>
-<li><a href="contact.html">📞 Contact</a></li>
-<li><a href="about.html">📖 About</a></li>
-</ul>
-</nav>
-<section class="banner">
-<h1>Home Page</h1>
-<p>Building a better community through education and support.</p>
-</section>
-<section class="grid-section">
-<div class="grid-container">
-${[...Array(9)].map((_,i)=>`<div class='grid-item'><img src='https://picsum.photos/400/300?random=${i+1}'></div>`).join('')}
-</div>
-</section>
-<footer>
-<div class="social">
-<a href="#">🌐 Facebook</a>
-<a href="#">📸 Instagram</a>
-<a href="#">🐦 Twitter</a>
-</div>
-<p>© 2000 SBFC Organization. All rights reserved.</p>
-</footer>
-</body>
-</html>
-<header class="main-header">
-    <div class="container">
-        <div class="logo">
-            <span>SBFC</span> Organization
-        </div>
+<body>
 
-        <nav class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="mission.html">Mission</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="notice.html">Notice</a>
-            <a href="donate.html" class="donate-btn">Donate</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-left">
+        <img src="images/logo.png" class="logo">
     </div>
+
+    <div class="nav-center">
+        <h2>Welcome to SBFC Organization</h2>
+    </div>
+
+    <nav class="nav-right">
+        <a href="#">Home</a>
+        <a href="#">Mission</a>
+        <a href="#">Gallery</a>
+        <a href="#">Notice</a>
+        <a href="#">Donate</a>
+        <a href="#">Contact</a>
+    </nav>
 </header>
 
+<!-- HERO BANNER -->
 <section class="hero">
-    <div class="hero-content">
+    <div class="hero-text">
         <h1>Building a Better Future Together</h1>
         <p>Empowering communities through education, support, and unity.</p>
-        <a href="about.html" class="hero-btn">Learn More</a>
     </div>
 </section>
-<section class="grid-section">
-  <div class="grid-container" id="home-gallery"></div>
+
+<!-- IMAGE GRID -->
+<section class="gallery">
+    <div class="grid">
+        <img src="images/img1.jpg">
+        <img src="images/img2.jpg">
+        <img src="images/img3.jpg">
+        <img src="images/img4.jpg">
+        <img src="images/img5.jpg">
+        <img src="images/img6.jpg">
+    </div>
 </section>
 
+<footer>
+    <p>© 2026 SBFC Organization | All Rights Reserved</p>
+</footer>
 
-
+</body>
+</html>
