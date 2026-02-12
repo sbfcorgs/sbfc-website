@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin:0; padding:0; }
+header, nav, footer { display: flex; justify-content: space-between; align-items:center; padding: 10px 50px; background:#222; color:#fff; }
+header .welcome-text { animation: fadeIn 3s infinite alternate; }
+@keyframes fadeIn { 0% {opacity:0.3;} 100% {opacity:1;} }
+.grid-container { display: grid; grid-template-columns: repeat(3, 1fr); gap:15px; padding:20px; }
+.grid-item img { width:100%; height:auto; border-radius:10px; }
+footer { flex-direction: column; text-align:center; background:#111; padding:20px; }
