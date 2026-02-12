@@ -1,43 +1,44 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SBFC Organization - Home</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+</head>
+<body class="home">
 <header>
-  <div class="logo">SBFC Logo</div>
-  <div class="welcome-text">Welcome to SBFC Organization</div> <!-- Animation -->
-  <div class="page-name">🏠 Home</div>
+<div class="logo">SBFC</div>
+<div class="welcome-text">Welcome to SBFC Organization</div>
+<div class="page-name">🏠 Home</div>
 </header>
-
 <nav>
-  <ul>
-    <li><a href="index.html">🏠 Home</a></li>
-    <li><a href="mission.html">🎯 Mission & Vision</a></li>
-    <li><a href="gallery.html">📸 Gallery</a></li>
-    <li><a href="notice.html">📢 Notice / Events</a></li>
-    <li><a href="donate.html">🤝 Donate / Join Us</a></li>
-    <li><a href="contact.html">📞 Contact</a></li>
-    <li><a href="about.html">📖 About Us</a></li>
-  </ul>
+<ul>
+<li><a href="index.html">🏠 Home</a></li>
+<li><a href="mission.html">🎯 Mission</a></li>
+<li><a href="gallery.html">📸 Gallery</a></li>
+<li><a href="notice.html">📢 Notice</a></li>
+<li><a href="donate.html">🤝 Donate</a></li>
+<li><a href="contact.html">📞 Contact</a></li>
+<li><a href="about.html">📖 About</a></li>
+</ul>
 </nav>
-
 <section class="banner">
-  <h1>Banner Here</h1>
-  <p>Building a better community through education and support.</p>
+<h1>Home Page</h1>
+<p>Building a better community through education and support.</p>
 </section>
 <section class="grid-section">
-  <div class="grid-container">
-    <div class="grid-item"><img src="images/img1.jpg" alt=""></div>
-    <div class="grid-item"><img src="images/img2.jpg" alt=""></div>
-    <div class="grid-item"><img src="images/img3.jpg" alt=""></div>
-    <div class="grid-item"><img src="images/img4.jpg" alt=""></div>
-    <div class="grid-item"><img src="images/img5.jpg" alt=""></div>
-    <div class="grid-item"><img src="images/img6.jpg" alt=""></div>
-    <div class="grid-item"><img src="images/img7.jpg" alt=""></div>
-    <div class="grid-item"><img src="images/img8.jpg" alt=""></div>
-    <div class="grid-item"><img src="images/img9.jpg" alt=""></div>
-  </div>
+<div class="grid-container">
+${[...Array(9)].map((_,i)=>`<div class='grid-item'><img src='https://picsum.photos/400/300?random=${i+1}'></div>`).join('')}
+</div>
 </section>
 <footer>
-  <div class="social">
-    <a href="#">Facebook</a>
-    <a href="#">Instagram</a>
-    <a href="#">Twitter</a>
-  </div>
-  <p>© 2000 SBFC Organization. All rights reserved.</p>
+<div class="social">
+<a href="#">🌐 Facebook</a>
+<a href="#">📸 Instagram</a>
+<a href="#">🐦 Twitter</a>
+</div>
+<p>© 2000 SBFC Organization. All rights reserved.</p>
 </footer>
+</body>
+</html>
