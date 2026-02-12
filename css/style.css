@@ -125,3 +125,20 @@ footer {
     background: #0d2c6c;
     color: white;
 }
+.social-bar {
+    text-align: center;
+    padding: 20px;
+    background: #1e63ff;
+}
+
+.social-bar a {
+    color: white;
+    font-size: 22px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-bar a:hover {
+    color: yellow;
+    transform: scale(1.2);
+}
