@@ -9,7 +9,7 @@ body {
     background: #f4f4f4;
 }
 
-/* NAVBAR */
+/* GORGEOUS NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
@@ -17,11 +17,23 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
-    padding: 15px 40px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 50px;
+
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #1e63ff);
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease infinite;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
     z-index: 1000;
 }
+
+/* Gradient Animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
 body {
     padding-top: 90px;
@@ -33,10 +45,12 @@ body {
 }
 
 .nav-center h2 {
-    color: #0d2c6c;
-    font-weight: 1200;
-    animation: fadeSlide 5s ease-in-out infinite alternate;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
 }
+
 
 @keyframes fadeSlide {
     from { opacity: 0.6; transform: translateY(-5px); }
@@ -45,16 +59,34 @@ body {
 
 
 .nav-right a {
-    margin-left: 20px;
+    margin-left: 25px;
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: 500;
+    position: relative;
     transition: 0.3s;
 }
 
-.nav-right a:hover {
-    color: #1e63ff;
+/* Underline Hover Effect */
+.nav-right a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: yellow;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
 }
+
+.nav-right a:hover::after {
+    width: 100%;
+}
+
+.nav-right a:hover {
+    color: yellow;
+}
+
 
 .hero {
     height: 70vh;
@@ -141,4 +173,16 @@ footer {
 .social-bar a:hover {
     color: yellow;
     transform: scale(1.2);
+}
+.donate-btn {
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: white !important;
+    font-weight: bold;
+}
+
+.donate-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,152,0,0.7);
 }
