@@ -29,13 +29,13 @@ body {
 
 
 .logo {
-    height: 50px;
+    height: 80px;
 }
 
 .nav-center h2 {
     color: #0d2c6c;
-    font-weight: 600;
-    animation: fadeSlide 2s ease-in-out infinite alternate;
+    font-weight: 1200;
+    animation: fadeSlide 5s ease-in-out infinite alternate;
 }
 
 @keyframes fadeSlide {
