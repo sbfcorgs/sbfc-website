@@ -1,200 +1,107 @@
-/* ===== Global Style ===== */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-body{
-    font-family: 'Segoe UI', sans-serif;
-    color:#fff;
+body {
+    background: #f4f4f4;
 }
 
-/* ===== Header ===== */
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-    background:#0f172a;
-}
-
-.logo{
-    font-size:22px;
-    font-weight:bold;
-}
-
-.page-name{
-    font-size:16px;
-}
-
-/* ===== Animated Welcome Text ===== */
-.welcome-text{
-    font-size:18px;
-    font-weight:bold;
-    animation: glow 2s infinite alternate;
-}
-
-@keyframes glow{
-    from {opacity:0.5;}
-    to {opacity:1;}
-}
-
-/* ===== Navbar ===== */
-nav{
-    background:#1e293b;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    padding:12px 40px;
-    gap:20px;
-}
-
-nav ul li a{
-    text-decoration:none;
-    color:white;
-    font-size:14px;
-    transition:0.3s;
-}
-
-nav ul li a:hover{
-    color:#38bdf8;
-}
-
-/* ===== Banner ===== */
-.banner{
-    text-align:center;
-    padding:70px 20px;
-    background:linear-gradient(45deg,#0f2027,#203a43,#2c5364);
-}
-
-.banner h1{
-    font-size:40px;
-    margin-bottom:15px;
-}
-
-.banner p{
-    font-size:18px;
-}
-
-/* ===== Grid Section ===== */
-.grid-section{
-    padding:50px;
-}
-
-.grid-container{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.grid-item img{
-    width:100%;
-    border-radius:10px;
-    transition:0.4s;
-}
-
-.grid-item img:hover{
-    transform:scale(1.05);
-}
-
-/* ===== Footer ===== */
-footer{
-    text-align:center;
-    padding:30px;
-    background:#0f172a;
-}
-
-footer .social{
-    margin-bottom:10px;
-}
-/* ===== Professional Navbar ===== */
-
-.main-header {
-    background: #ffffff;
-    padding: 15px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
+/* NAVBAR */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: white;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #0f172a;
+    height: 50px;
 }
 
-.logo span {
-    color: #2563eb;
+.nav-center h2 {
+    color: #0d2c6c;
+    font-weight: 600;
 }
 
-.nav-menu a {
+.nav-right a {
     margin-left: 20px;
     text-decoration: none;
-    color: #0f172a;
+    color: #333;
     font-weight: 500;
     transition: 0.3s;
 }
 
-.nav-menu a:hover {
-    color: #2563eb;
+.nav-right a:hover {
+    color: #1e63ff;
 }
 
-.donate-btn {
-    background: #2563eb;
-    color: #fff !important;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-/* ===== Hero Section ===== */
-
+/* HERO */
 .hero {
     height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1509099836639-18ba1795216d');
-    background-size: cover;
-    background-position: center;
+    background: url('../images/banner.jpg') center/cover no-repeat;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    padding-top: 80px;
-}
-
-.hero-content h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.hero-btn {
-    background: #2563eb;
     color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* GALLERY */
+.gallery {
+    padding: 60px 40px;
+    background: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
-.hero-btn:hover {
-    background: #1e40af;
+.grid img:hover {
+    transform: scale(1.05);
 }
 
-
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0d2c6c;
+    color: white;
+}
