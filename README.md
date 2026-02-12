@@ -1,2 +1,2 @@
-# sbfc-website
+# sbfc-orgs
 SBFC Organization
