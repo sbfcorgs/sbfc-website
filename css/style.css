@@ -1,27 +1,32 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
 }
 
-.hero-section h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+.logo {
+width: 50px;
 }
 
-.hero-section p {
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+.hero-section {
+background: url('../images/hero.jpg') center/cover no-repeat;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
 }
 
-.navbar .logo {
-  width: 80px;
+.hero-section .overlay {
+background: rgba(0,0,0,0.6);
+padding: 40px;
+border-radius: 10px;
 }
 
-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.section-padding {
+padding: 80px 0;
 }
 
-footer p {
-  margin: 0;
+h2 {
+margin-bottom: 30px;
 }
