@@ -50,6 +50,22 @@
 <footer>
   © 2026 SBFC Organization | All Rights Reserved
 </footer>
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+function openImage(img) {
+    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("modalImg").src = img.src;
+}
+
+function closeImage() {
+    document.getElementById("imageModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
+
