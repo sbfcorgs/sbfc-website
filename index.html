@@ -42,14 +42,15 @@
 <!-- IMAGE GRID -->
 <section class="gallery">
     <div class="grid">
-        <img src="images/img1.jpg">
-        <img src="images/img2.jpg">
-        <img src="images/img3.jpg">
-        <img src="images/img4.jpg">
-        <img src="images/img5.jpg">
-        <img src="images/img6.jpg">
+        <img src="images/img1.jpg" onclick="openImage(this)">
+        <img src="images/img2.jpg" onclick="openImage(this)">
+        <img src="images/img3.jpg" onclick="openImage(this)">
+        <img src="images/img4.jpg" onclick="openImage(this)">
+        <img src="images/img5.jpg" onclick="openImage(this)">
+        <img src="images/img6.jpg" onclick="openImage(this)">
     </div>
 </section>
+
 <!-- SOCIAL MEDIA BAR -->
 <section class="social-bar">
     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -61,9 +62,25 @@
 <footer>
     <p>© 2020 SBFC Organization | All Rights Reserved</p>
 </footer>
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+function openImage(img) {
+    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("modalImg").src = img.src;
+}
+
+function closeImage() {
+    document.getElementById("imageModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
+
 
 
 
