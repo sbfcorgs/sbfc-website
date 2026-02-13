@@ -207,3 +207,10 @@ footer {
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(255,152,0,0.7);
 }
+.navbar {
+    height: 90px;
+}
+
+body {
+    padding-top: 100px;
+}
