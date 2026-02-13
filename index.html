@@ -1,90 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SBFC Organization</title>
+<html>
+<head>
+<title>SBFC Organization - Home</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="home-page">
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="nav-left">
-        <img src="images/logo.png" class="logo">
-    </div>
+<body>
 
-    <div class="nav-center">
-        <h2>Welcome to SBFC Organization</h2>
-        <h1>Building a Better Future Together</h1>
-    </div>
+<div class="navbar">
+  <div><img src="images/logo.png" class="logo"></div>
 
-    <nav class="nav-right">
-        <a href="#">Home</a>
-        <a href="#">Mission</a>
-        <a href="#">Gallery</a>
-        <a href="#">Notice</a>
-        <a href="#">Donate</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
+  <div class="nav-center">
+    <h2>Welcome to SBFC Organization</h2>
+  </div>
 
-<section class="hero">
-    <img src="images/banner.jpg" alt="Banner" class="hero-img">
-
-    <div class="hero-text">
-        <p></p>
-    </div>
-</section>
-
-
-<!-- IMAGE GRID -->
-<section class="gallery">
-    <div class="grid">
-        <img src="images/img1.jpg" onclick="openImage(this)">
-        <img src="images/img2.jpg" onclick="openImage(this)">
-        <img src="images/img3.jpg" onclick="openImage(this)">
-        <img src="images/img4.jpg" onclick="openImage(this)">
-        <img src="images/img5.jpg" onclick="openImage(this)">
-        <img src="images/img6.jpg" onclick="openImage(this)">
-    </div>
-</section>
-
-<!-- SOCIAL MEDIA BAR -->
-<section class="social-bar">
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-youtube"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-whatsapp"></i></a>
-</section>
-
-<footer>
-    <p>© 2020 SBFC Organization | All Rights Reserved</p>
-</footer>
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeImage()">&times;</span>
-    <img class="modal-content" id="modalImg">
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="mission.html">Mission</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="notice.html">Notice</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </div>
 
-<script>
-function openImage(img) {
-    document.getElementById("imageModal").style.display = "block";
-    document.getElementById("modalImg").src = img.src;
-}
+<section class="hero" style="background-image:url('images/home.jpg');"></section>
 
-function closeImage() {
-    document.getElementById("imageModal").style.display = "none";
-}
-</script>
-    
+<div class="section">
+  <h2>Our Activities</h2>
+  <div class="grid">
+    <img src="images/img1.jpg">
+    <img src="images/img2.jpg">
+    <img src="images/img3.jpg">
+    <img src="images/img4.jpg">
+    <img src="images/img5.jpg">
+    <img src="images/img6.jpg">
+  </div>
+</div>
 
+<div class="social-bar">
+  <a href="#">Facebook</a>
+  <a href="#">YouTube</a>
+  <a href="#">WhatsApp</a>
+</div>
+
+<footer>
+  © 2026 SBFC Organization | All Rights Reserved
+</footer>
+
+<script src="js/script.js"></script>
+</body>
 </html>
-
-
-
-
-
-
-
-
