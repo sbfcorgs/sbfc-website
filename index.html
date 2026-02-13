@@ -3,8 +3,11 @@
 <head>
 <title>SBFC Organization - Home</title>
 <link rel="stylesheet" href="css/style.css">
-</head>
 
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
 <body>
 
 <!-- NAVBAR -->
@@ -25,51 +28,63 @@
   </div>
 </div>
 
-<!-- HERO SECTION -->
-<section class="hero home-hero">
-  <div class="hero-content">
-    <h1>Together We Build a Better Community</h1>
-    <p>Supporting Education, Humanity & Social Welfare</p>
-    <a href="donate.html" class="hero-btn">Donate Now</a>
-  </div>
-</section>
+<!-- HERO SECTION (NO TEXT) -->
+<section class="hero home-hero"></section>
 
-<!-- ABOUT SECTION -->
+
+<!-- OUR ACTIVITIES (8 IMAGE GRID) -->
 <div class="section">
+  <h2>Our Activities</h2>
+
+  <div class="gallery-grid">
+    <img src="images/img1.jpg" onclick="openLightbox(this.src)">
+    <img src="images/img2.jpg" onclick="openLightbox(this.src)">
+    <img src="images/img3.jpg" onclick="openLightbox(this.src)">
+    <img src="images/img4.jpg" onclick="openLightbox(this.src)">
+    <img src="images/img5.jpg" onclick="openLightbox(this.src)">
+    <img src="images/img6.jpg" onclick="openLightbox(this.src)">
+    <img src="images/img7.jpg" onclick="openLightbox(this.src)">
+    <img src="images/img8.jpg" onclick="openLightbox(this.src)">
+  </div>
+</div>
+
+
+<!-- ABOUT SECTION (Before Footer) -->
+<div class="section about-section">
   <h2>About SBFC Organization</h2>
-  <p style="max-width:800px;margin:20px auto;">
+  <p>
     SBFC Organization is a non-profit social organization working for community development,
     education support, and humanitarian activities. We believe in unity, compassion and service.
   </p>
 </div>
 
-<!-- ACTIVITIES SECTION -->
-<div class="section" style="background:#ffffff;">
-  <h2>Our Activities</h2>
-  <div class="grid">
-    <img src="images/img1.jpg">
-    <img src="images/img2.jpg">
-    <img src="images/img3.jpg">
-  </div>
-</div>
-
-<!-- CALL TO ACTION -->
-<div class="section" style="background:#1e63ff;color:white;">
-  <h2>Join Us & Make a Difference</h2>
-  <p style="margin:15px 0;">Your small contribution can change someone’s life.</p>
-  <a href="contact.html" class="hero-btn" style="background:white;color:#1e63ff;">Contact Us</a>
-</div>
 
 <!-- SOCIAL -->
 <div class="social-bar">
-  <a href="#">Facebook</a>
-  <a href="#">YouTube</a>
-  <a href="#">WhatsApp</a>
+  <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+  <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+  <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 </div>
 
 <footer>
   © 2000 SBFC Organization | All Rights Reserved
 </footer>
+
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(src){
+  document.getElementById("lightbox").style.display="flex";
+  document.getElementById("lightbox-img").src=src;
+}
+function closeLightbox(){
+  document.getElementById("lightbox").style.display="none";
+}
+</script>
 
 </body>
 </html>
