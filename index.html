@@ -1,125 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SBFC Organization</title>
-  
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SBFC Organization</title>
 
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="SBFC Logo" class="logo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
-        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#notice">Notice</a></li>
-        <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">
+<img src="images/logo.png" class="logo"> SBFC Organization
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="#notice">Notice</a></li>
+<li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
 </nav>
 
-<!-- Hero Section -->
-<section id="home" class="hero-section text-center text-white d-flex align-items-center" style="background: url('images/hero-bg.jpg') no-repeat center center/cover; height: 100vh;">
-  <div class="container">
-    <h1>Welcome to SBFC Organization</h1>
-    <p>Serving the community with dedication & care</p>
-    <a href="#donate" class="btn btn-primary btn-lg mt-3">Donate Now</a>
-  </div>
+<!-- Hero -->
+<section id="home" class="hero-section text-center text-white">
+<div class="overlay">
+<h1>Welcome to SBFC Organization</h1>
+<p>Serving Community With Dedication</p>
+<a href="#donate" class="btn btn-primary btn-lg">Donate Now</a>
+</div>
 </section>
 
-<!-- Mission Section -->
-<section id="mission" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Mission & Vision</h2>
-    <p class="text-center">Our mission is to support the community through various social and charitable activities, creating a better future for everyone.</p>
-  </div>
+<!-- Mission -->
+<section id="mission" class="section-padding">
+<div class="container text-center">
+<h2>Mission & Vision</h2>
+<p>
+SBFC Organization is a social welfare organization committed to supporting 
+community development, charity work, and social awareness programs.
+</p>
+</div>
 </section>
 
-<!-- Gallery Section -->
-<section id="gallery" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Gallery</h2>
-    <div class="row g-3">
-      <div class="col-md-4"><img src="images/gallery1.jpg" class="img-fluid rounded" alt="Gallery 1"></div>
-      <div class="col-md-4"><img src="images/gallery2.jpg" class="img-fluid rounded" alt="Gallery 2"></div>
-      <div class="col-md-4"><img src="images/gallery3.jpg" class="img-fluid rounded" alt="Gallery 3"></div>
-    </div>
-  </div>
+<!-- Gallery -->
+<section id="gallery" class="section-padding bg-light">
+<div class="container text-center">
+<h2>Gallery</h2>
+<div class="row">
+<div class="col-md-4"><img src="images/gallery1.jpg" class="img-fluid rounded"></div>
+<div class="col-md-4"><img src="images/gallery2.jpg" class="img-fluid rounded"></div>
+<div class="col-md-4"><img src="images/gallery3.jpg" class="img-fluid rounded"></div>
+</div>
+</div>
 </section>
 
-<!-- Notice Section -->
-<section id="notice" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Notice / Events</h2>
-    <ul class="list-group">
-      <li class="list-group-item">Event 1: Community gathering on 20 Feb 2026</li>
-      <li class="list-group-item">Event 2: Charity drive on 25 Feb 2026</li>
-      <li class="list-group-item">Notice 1: Annual meeting schedule released</li>
-    </ul>
-  </div>
+<!-- Notice -->
+<section id="notice" class="section-padding">
+<div class="container text-center">
+<h2>Notice & Events</h2>
+<ul class="list-group">
+<li class="list-group-item">Community Event – 20 Feb 2026</li>
+<li class="list-group-item">Charity Program – 25 Feb 2026</li>
+<li class="list-group-item">Annual Meeting Announcement</li>
+</ul>
+</div>
 </section>
 
-<!-- Donate Section -->
-<section id="donate" class="py-5 bg-light text-center">
-  <div class="container">
-    <h2 class="mb-4">Support Our Cause</h2>
-    <p>Your donations help us serve the community better. Every contribution counts!</p>
-    <a href="#" class="btn btn-success btn-lg">Donate Now</a>
-  </div>
+<!-- Donate -->
+<section id="donate" class="section-padding bg-light text-center">
+<div class="container">
+<h2>Support Our Cause</h2>
+<p>Your support helps us grow and serve better.</p>
+<a href="#" class="btn btn-success btn-lg">Donate Now</a>
+</div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Name</label>
-            <input type="text" class="form-control" placeholder="Your Name">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control" placeholder="Your Email">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Message</label>
-            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </div>
+<!-- Contact -->
+<section id="contact" class="section-padding">
+<div class="container text-center">
+<h2>Contact Us</h2>
+<p>Email: info@sbfc.org</p>
+<p>Phone: +971 000 000000</p>
+</div>
 </section>
 
 <!-- Footer -->
-<footer class="py-4 bg-dark text-white text-center">
-  <p>&copy; 2026 SBFC Organization. All rights reserved.</p>
+<footer class="bg-dark text-white text-center p-3">
+© 2026 SBFC Organization. All Rights Reserved.
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom JS -->
 <script src="js/script.js"></script>
 </body>
 </html>
