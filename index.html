@@ -3,13 +3,11 @@
 <head>
 <title>SBFC Organization - Home</title>
 <link rel="stylesheet" href="css/style.css">
-
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
   <div><img src="images/logo.png" class="logo"></div>
 
@@ -27,45 +25,51 @@
   </div>
 </div>
 
-<section class="hero" style="background-image:url('images/home.jpg');"></section>
+<!-- HERO SECTION -->
+<section class="hero home-hero">
+  <div class="hero-content">
+    <h1>Together We Build a Better Community</h1>
+    <p>Supporting Education, Humanity & Social Welfare</p>
+    <a href="donate.html" class="hero-btn">Donate Now</a>
+  </div>
+</section>
 
+<!-- ABOUT SECTION -->
 <div class="section">
+  <h2>About SBFC Organization</h2>
+  <p style="max-width:800px;margin:20px auto;">
+    SBFC Organization is a non-profit social organization working for community development,
+    education support, and humanitarian activities. We believe in unity, compassion and service.
+  </p>
+</div>
+
+<!-- ACTIVITIES SECTION -->
+<div class="section" style="background:#ffffff;">
   <h2>Our Activities</h2>
   <div class="grid">
     <img src="images/img1.jpg">
     <img src="images/img2.jpg">
     <img src="images/img3.jpg">
-    <img src="images/img4.jpg">
-    <img src="images/img5.jpg">
-    <img src="images/img6.jpg">
   </div>
 </div>
 
+<!-- CALL TO ACTION -->
+<div class="section" style="background:#1e63ff;color:white;">
+  <h2>Join Us & Make a Difference</h2>
+  <p style="margin:15px 0;">Your small contribution can change someone’s life.</p>
+  <a href="contact.html" class="hero-btn" style="background:white;color:#1e63ff;">Contact Us</a>
+</div>
+
+<!-- SOCIAL -->
 <div class="social-bar">
-  <a href="#"><i class="fab fa-facebook"></i></a>
-  <a href="#"><i class="fab fa-youtube"></i></a>
-  <a href="#"><i class="fab fa-whatsapp"></i></a>
+  <a href="#">Facebook</a>
+  <a href="#">YouTube</a>
+  <a href="#">WhatsApp</a>
 </div>
 
 <footer>
-  © 2026 SBFC Organization | All Rights Reserved
+  © 2000 SBFC Organization | All Rights Reserved
 </footer>
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeImage()">&times;</span>
-    <img class="modal-content" id="modalImg">
-</div>
-
-<script>
-function openImage(img) {
-    document.getElementById("imageModal").style.display = "block";
-    document.getElementById("modalImg").src = img.src;
-}
-
-function closeImage() {
-    document.getElementById("imageModal").style.display = "none";
-}
-</script>
 
 </body>
 </html>
-
