@@ -1,2 +1,0 @@
-# sbfc-orgs
-SBFC Organization
