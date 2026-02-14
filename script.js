@@ -1,1 +1,1 @@
-// future animations or smooth scroll
+// Add smooth scrolling or animations later
