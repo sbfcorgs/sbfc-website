@@ -1,0 +1,69 @@
+body {
+  margin:0;
+  font-family:Arial;
+  background:#f9fafb;
+}
+
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+  background:#2563EB;
+  color:white;
+}
+
+.navbar a {
+  color:white;
+  margin-left:15px;
+  text-decoration:none;
+}
+
+.hero {
+  text-align:center;
+  padding:100px 20px;
+  background:#10B981;
+  color:white;
+}
+
+.btn {
+  background:#F59E0B;
+  padding:10px 20px;
+  color:white;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+}
+
+.page {
+  padding:60px 20px;
+  text-align:center;
+}
+
+.gallery img {
+  width:200px;
+  margin:10px;
+  cursor:pointer;
+}
+
+#lightbox {
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:black;
+  justify-content:center;
+  align-items:center;
+}
+
+#lightbox img {
+  max-width:80%;
+}
+
+.card {
+  background:white;
+  padding:20px;
+  margin:20px;
+  display:inline-block;
+}
